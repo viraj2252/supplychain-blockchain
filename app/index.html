@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample Contract - Truffle Webpack Demo w/ Frontend</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Supply Chain</h1>
+    <h2>Contract Info</h2>
+
+    <p>
+        <table>
+            <tr>
+                <td>Pb numbers</td>
+                <td id="pb"></td>
+            </tr>
+            <tr>
+                <td>Total Volume</td>
+                <td id="totVol"></td>
+            </tr>
+            <tr>
+                <td>Unit</td>
+                <td id="unit"></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td id="tState"></td>
+            </tr>
+        </table>
+    </p>
+
+    <input type="button" onclick="splitContract()" value="Split" />
+</body>
+
+</html>

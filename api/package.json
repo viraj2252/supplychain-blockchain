@@ -1,0 +1,22 @@
+{
+    "name": "supplyapi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "ethereumjs-testrpc": "^4.0.1",
+        "nodemon": "^1.11.0"
+    },
+    "dependencies": {
+        "async": "^2.5.0",
+        "express": "^4.15.3",
+        "node-cache": "^4.1.1",
+        "web3": "^0.19.0"
+    }
+}
