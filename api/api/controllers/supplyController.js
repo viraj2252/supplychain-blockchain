@@ -6,9 +6,9 @@ var async = require("async");
 const NodeCache = require("node-cache");
 //const TestRPC = require("ethereumjs-testrpc");
 var Contract = require('truffle-contract');
-var WarrentArtifact = require('../../../build/contracts/Warrant.json');
-const web3 = new Web3('http://localhost:8545');
-web3.setProvider(new web3.providers.HttpProvider("http://127.0.0.1:8545"));
+var WarrentArtifact = require('../../contracts/Warrant.json');
+const web3 = new Web3('http://vjtestrpc:8545');
+web3.setProvider(new web3.providers.HttpProvider("http://vjtestrpc:8545"));
 var defAccount = '';
 
 const myCache = new NodeCache();

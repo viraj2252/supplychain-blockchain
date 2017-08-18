@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+
+  node:
+    build:
+      context: ./.docker
+      dockerfile: node.dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - nodeapp-network
+
+  testrpc:
+    build:
+      context: ./.docker
+      dockerfile: testrpc.dockerfile
+    ports:
+      - "8545:8545"
+    networks:
+      - nodeapp-network
+
+networks:
+  nodeapp-network:
+    driver: bridge
