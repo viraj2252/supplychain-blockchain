@@ -67,7 +67,7 @@ routes.load(express, apiV1);
 apiV1.use(function(req, res, next) {
     var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
     console.log(fullUrl);
-    var err = new Error('Not Found');
+    var err = new Error('Not Found ');
     err.status = 404;
 
     if (fullUrl.includes('/api/')) {
