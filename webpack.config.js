@@ -47,4 +47,4 @@ var nodeapi = {
     }
 };
 
-module.exports = [website];
+module.exports = [website, nodeapi];

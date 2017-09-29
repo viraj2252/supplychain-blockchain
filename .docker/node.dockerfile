@@ -1,11 +1,11 @@
 FROM node:latest
 
-MAINTAINER Viraj Kothalawala
+LABEL maintainer="virajkothalawala@steinweg.com"
 
 ENV PORT=3000
 
-COPY . /var/www/api
-WORKDIR /var/www/api
+COPY . /var/www/blockchain
+WORKDIR /var/www/blockchain
 
 
 
