@@ -1,14 +1,14 @@
 pipeline {
     agent {
         docker {
-            image 'node:latest'
+            image 'node:alpine'
             args '-p 3000:3000'
         }
     }
     stages {
         stage('Build') {
             steps {
-                sh 'apt-get update && apt-get upgrade && apt-get install git'
+                sh 'apk update && apk upgrade && apk add --no-cache bash git openssh'
                 sh 'npm install'
             }
         }
