@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'apk add git'
+                sh 'apk update && apk upgrade && apk add --no-cache bash git openssh'
                 sh 'npm install'
             }
         }
