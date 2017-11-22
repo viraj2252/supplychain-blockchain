@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'apk update && apk upgrade && apk add --no-cache bash git openssh'
+                sh 'sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git'
                 sh 'npm install'
             }
         }
